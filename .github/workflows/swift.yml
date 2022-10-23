@@ -23,6 +23,4 @@ jobs:
     - name: Run tests
       working-directory: ./MyLibrary
       run: swift test -v
-    - name : Run Node file
-      working-directory : ./MyLibrary/mockServer
-      run: node index.js
+
