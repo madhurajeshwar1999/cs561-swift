@@ -24,9 +24,11 @@ jobs:
       run: swift build -v
     - name : Install Dependencies
       working-directory : /MyLibrary/mockServer
+      run: npm install
     - name : RUN FIle INDEX.JS
       working-directory : /MyLibrary/mockServer
-      run : node index.js 
+      run : node index.js
+      
     - name: Run tests
       working-directory: ./MyLibrary
       run: swift test -v
