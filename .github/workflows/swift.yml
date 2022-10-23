@@ -22,15 +22,14 @@ jobs:
     - name: Build
       working-directory: ./MyLibrary
       run: swift build -v
+    - name: Run tests
+      working-directory: ./MyLibrary
+      run: swift test -v
     - name : Install Dependencies
       working-directory : ./mockServer
       run: npm install
     - name : RUN FIle INDEX.JS
       working-directory : ./mockServer
       run : node index.js
-      
-    - name: Run tests
-      working-directory: ./MyLibrary
-      run: swift test -v
      
 
