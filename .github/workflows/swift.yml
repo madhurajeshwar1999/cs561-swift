@@ -24,7 +24,7 @@ jobs:
       run: npm install
     - name : RUN FIle INDEX.JS
       working-directory : ./mockServer
-      run : node index.js
+      run : nohup node index.js &
     - name: Build
       working-directory: ./MyLibrary
       run: swift build -v
