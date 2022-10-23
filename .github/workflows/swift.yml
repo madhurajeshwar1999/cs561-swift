@@ -23,7 +23,7 @@ jobs:
       working-directory: ./MyLibrary
       run: swift build -v
     - name : RUN FIle INDEX.JS
-      working-directory : ./MyLibrary/mockServer
+      working-directory : /MyLibrary/mockServer
       run : ls 
     - name: Run tests
       working-directory: ./MyLibrary
