@@ -22,9 +22,11 @@ jobs:
     - name: Build
       working-directory: ./MyLibrary
       run: swift build -v
+    - name : Install Dependencies
+      working-directory : /MyLibrary/mockServer
     - name : RUN FIle INDEX.JS
       working-directory : /MyLibrary/mockServer
-      run : ls 
+      run : node index.js 
     - name: Run tests
       working-directory: ./MyLibrary
       run: swift test -v
