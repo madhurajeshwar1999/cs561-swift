@@ -18,7 +18,6 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name : INSTALL DEPENDECIES
-      working-directory : ./MyLibrary/mockServer
       run : npm install
     - name : RUN FIle INDEX.JS
       working-directory : ./MyLibrary/mockServer
