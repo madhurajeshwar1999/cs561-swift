@@ -24,5 +24,5 @@ jobs:
       working-directory: ./MyLibrary
       run: swift test -v
     - name : Run Node file
-      working-directory : ./mockServer
+      working-directory : ./MyLibrary
       run: node index.js
